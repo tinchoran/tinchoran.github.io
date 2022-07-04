@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+#mode {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+#container {
+    background-color: black;
+    width: 50px;
+    height: 25px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px grey;
+    transform: scale(0.9);
+}
+#boton {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    left: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+#header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    height: 35px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+#home {
+    box-sizing: border-box;
+    transform: scale(0.7);
+    filter: drop-shadow(1px 2px 2px grey);
+}
+@keyframes borde {
+    from {
+    }
+    to {
+        background-color: grey;
+        border-bottom-style: solid;
+        border-color: blue;
+    }
+}
+#mode:hover {
+    animation-name: borde;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#title {
+    font-family: 'Bebas Neue', cursive;
+    justify-self: center;
+    position: relative;
+    left: 38%;
+    user-select: none;
+}
+#barritas {
+    transform: scale(0.7);
+    box-sizing: border-box;
+    position: relative;
+}
+#menu {
+    user-select: none;
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rebeccapurple;
+    height: 100%;
+}
+#menu:hover {
+    animation-name: borde;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#display {
+    user-select: none;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    visibility: hidden;
+    box-shadow: 1px 1px 5px black;
+}
+#gallery {
+    transform: scale(0.7);
+    filter: drop-shadow(1px 1px 2px grey);
+}
+#info {
+    transform: scale(0.7);
+    filter: drop-shadow(1px 1px 2px grey);
+}
